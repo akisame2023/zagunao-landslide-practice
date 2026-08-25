@@ -1,0 +1,23 @@
+{
+  "ndvi_2020": {
+    "XGB_AUC": 0.91,
+    "XGB_ACC": 0.83,
+    "XGB_F1": 0.838,
+    "XGB_Kappa": 0.66,
+    "RF_AUC": 0.902,
+    "LR_AUC": 0.873,
+    "ndvi_importance": 0.1433,
+    "ndvi_rank": 2
+  },
+  "ndvi_2007": {
+    "XGB_AUC": 0.904,
+    "XGB_ACC": 0.822,
+    "XGB_F1": 0.828,
+    "XGB_Kappa": 0.644,
+    "RF_AUC": 0.891,
+    "LR_AUC": 0.85,
+    "ndvi_importance": 0.1289,
+    "ndvi_rank": 2
+  },
+  "note": "3-tile 2007 composite vs 5-tile 2020 composite; XGB diff 0.006"
+}

@@ -1,0 +1,86 @@
+{
+  "oof_metrics": {
+    "LR": {
+      "AUC": 0.838,
+      "Acc": 0.7563,
+      "F1": 0.7761,
+      "Kappa": 0.509,
+      "n": 23531,
+      "folds_used": [
+        0,
+        2,
+        3,
+        4
+      ]
+    },
+    "RF": {
+      "AUC": 0.8276,
+      "Acc": 0.764,
+      "F1": 0.7851,
+      "Kappa": 0.5235,
+      "n": 23531,
+      "folds_used": [
+        0,
+        2,
+        3,
+        4
+      ]
+    },
+    "XGB": {
+      "AUC": 0.8341,
+      "Acc": 0.7491,
+      "F1": 0.7659,
+      "Kappa": 0.4964,
+      "n": 23531,
+      "folds_used": [
+        0,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  "zoning_oof": [
+    {
+      "zone": "very_low",
+      "n": 4706,
+      "area_share_pct": 20.0,
+      "pos_share_pct": 8.35,
+      "n_pos": 393
+    },
+    {
+      "zone": "low",
+      "n": 4706,
+      "area_share_pct": 20.0,
+      "pos_share_pct": 37.93,
+      "n_pos": 1785
+    },
+    {
+      "zone": "moderate",
+      "n": 4706,
+      "area_share_pct": 20.0,
+      "pos_share_pct": 65.72,
+      "n_pos": 3093
+    },
+    {
+      "zone": "high",
+      "n": 4706,
+      "area_share_pct": 20.0,
+      "pos_share_pct": 77.33,
+      "n_pos": 3639
+    },
+    {
+      "zone": "very_high",
+      "n": 4707,
+      "area_share_pct": 20.0,
+      "pos_share_pct": 88.72,
+      "n_pos": 4176
+    }
+  ],
+  "thresholds": [
+    0.13877928800555323,
+    0.40664111545232545,
+    0.664377592384683,
+    0.8597387620809294
+  ]
+}

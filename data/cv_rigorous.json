@@ -1,0 +1,213 @@
+{
+  "scheme_A_kmeans_contig_300m": {
+    "results": {
+      "LR": {
+        "AUC": "0.663±0.017",
+        "Acc": "0.575±0.056",
+        "F1": "0.672±0.020",
+        "Kappa": "0.149±0.088",
+        "n_folds_used": 2
+      },
+      "RF": {
+        "AUC": "0.646±0.035",
+        "Acc": "0.474±0.152",
+        "F1": "0.546±0.132",
+        "Kappa": "0.133±0.108",
+        "n_folds_used": 2
+      },
+      "XGBoost": {
+        "AUC": "0.630±0.040",
+        "Acc": "0.495±0.125",
+        "F1": "0.576±0.094",
+        "Kappa": "0.133±0.105",
+        "n_folds_used": 2
+      }
+    },
+    "folds": [
+      {
+        "block": 0,
+        "used": true,
+        "n_test": 5593,
+        "pos": 3597,
+        "neg": 1996,
+        "n_train_after_buffer": 20537
+      },
+      {
+        "block": 1,
+        "used": true,
+        "n_test": 10548,
+        "pos": 9489,
+        "neg": 1059,
+        "n_train_after_buffer": 15582
+      },
+      {
+        "block": 2,
+        "used": false,
+        "n_test": 3605,
+        "pos": 0,
+        "neg": 3605,
+        "reason": "single-class test fold"
+      },
+      {
+        "block": 3,
+        "used": false,
+        "n_test": 3550,
+        "pos": 0,
+        "neg": 3550,
+        "reason": "single-class test fold"
+      },
+      {
+        "block": 4,
+        "used": false,
+        "n_test": 2876,
+        "pos": 0,
+        "neg": 2876,
+        "reason": "single-class test fold"
+      }
+    ],
+    "buffer_m": 300.0,
+    "n_blocks": 5,
+    "method": "k-means contiguous blocks + buffer exclusion (Roberts et al. 2017; Meyer & Pebesma 2022)"
+  },
+  "scheme_B_grid_snake_300m": {
+    "results": {
+      "LR": {
+        "AUC": "0.827±0.048",
+        "Acc": "0.760±0.060",
+        "F1": "0.726±0.107",
+        "Kappa": "0.464±0.102",
+        "n_folds_used": 4
+      },
+      "RF": {
+        "AUC": "0.819±0.034",
+        "Acc": "0.767±0.042",
+        "F1": "0.736±0.105",
+        "Kappa": "0.477±0.080",
+        "n_folds_used": 4
+      },
+      "XGBoost": {
+        "AUC": "0.819±0.034",
+        "Acc": "0.752±0.046",
+        "F1": "0.711±0.114",
+        "Kappa": "0.445±0.083",
+        "n_folds_used": 4
+      }
+    },
+    "folds": [
+      {
+        "block": 0,
+        "used": true,
+        "n_test": 7386,
+        "pos": 4381,
+        "neg": 3005,
+        "n_train_after_buffer": 18653
+      },
+      {
+        "block": 1,
+        "used": false,
+        "n_test": 2641,
+        "pos": 0,
+        "neg": 2641,
+        "reason": "single-class test fold"
+      },
+      {
+        "block": 2,
+        "used": true,
+        "n_test": 3419,
+        "pos": 796,
+        "neg": 2623,
+        "n_train_after_buffer": 22707
+      },
+      {
+        "block": 3,
+        "used": true,
+        "n_test": 5138,
+        "pos": 2610,
+        "neg": 2528,
+        "n_train_after_buffer": 20911
+      },
+      {
+        "block": 4,
+        "used": true,
+        "n_test": 7588,
+        "pos": 5299,
+        "neg": 2289,
+        "n_train_after_buffer": 18507
+      }
+    ],
+    "buffer_m": 300.0,
+    "n_blocks": 5,
+    "method": "4x4 grid snake folds + buffer exclusion"
+  },
+  "scheme_A_kmeans_contig_150m": {
+    "results": {
+      "LR": {
+        "AUC": "0.663±0.017",
+        "Acc": "0.577±0.053",
+        "F1": "0.675±0.017",
+        "Kappa": "0.150±0.087",
+        "n_folds_used": 2
+      },
+      "RF": {
+        "AUC": "0.647±0.035",
+        "Acc": "0.480±0.146",
+        "F1": "0.555±0.124",
+        "Kappa": "0.136±0.108",
+        "n_folds_used": 2
+      },
+      "XGBoost": {
+        "AUC": "0.629±0.040",
+        "Acc": "0.498±0.122",
+        "F1": "0.579±0.090",
+        "Kappa": "0.132±0.103",
+        "n_folds_used": 2
+      }
+    },
+    "folds": [
+      {
+        "block": 0,
+        "used": true,
+        "n_test": 5593,
+        "pos": 3597,
+        "neg": 1996,
+        "n_train_after_buffer": 20573
+      },
+      {
+        "block": 1,
+        "used": true,
+        "n_test": 10548,
+        "pos": 9489,
+        "neg": 1059,
+        "n_train_after_buffer": 15617
+      },
+      {
+        "block": 2,
+        "used": false,
+        "n_test": 3605,
+        "pos": 0,
+        "neg": 3605,
+        "reason": "single-class test fold"
+      },
+      {
+        "block": 3,
+        "used": false,
+        "n_test": 3550,
+        "pos": 0,
+        "neg": 3550,
+        "reason": "single-class test fold"
+      },
+      {
+        "block": 4,
+        "used": false,
+        "n_test": 2876,
+        "pos": 0,
+        "neg": 2876,
+        "reason": "single-class test fold"
+      }
+    ],
+    "buffer_m": 150.0,
+    "n_blocks": 5,
+    "method": "k-means contiguous blocks + buffer 150m (sensitivity)"
+  },
+  "note": "fold_meta records per-fold class composition and folds actually used; results only aggregate folds with both classes in test AND valid train after buffer."
+}
